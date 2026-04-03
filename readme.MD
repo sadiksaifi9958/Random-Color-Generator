@@ -2,7 +2,7 @@
 
 A lightweight browser-based tool that generates random colors on button click and displays the result in real time — built with pure HTML, CSS, and JavaScript.
 
-**Live Demo →** [sadiksaifi9958.github.io/Random-Color-Generator](https://sadiksaifi9958.github.io/Random-Color-Generator/)
+🔗 [Live Demo](https://sadiksaifi9958.github.io/Random-Color-Generator)
 
 ---
 
