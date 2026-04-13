@@ -1,19 +1,21 @@
 let btn = document.querySelector("button");
+let colorValue = document.querySelector(".color-value");
 
-btn.addEventListener("click", function() {
+
+btn.addEventListener("click", function () {
     let heading = document.querySelector("h1");
     let randomColor = getRandomColor();
-    heading.innerText = randomColor;
+    colorValue.innerText = randomColor;
     let box = document.querySelector("div");
     box.style.background = randomColor;
 });
 
 function getRandomColor() {
-let red = Math.floor(Math.random() * 255);
-let green = Math.floor(Math.random() * 255);
-let blue = Math.floor(Math.random() * 255);
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
 
 
-let color = `rgb(${red}, ${green}, ${blue} )`;
-return color; 
+    let color = `rgb(${red}, ${green}, ${blue} )`;
+    return color;
 }   
