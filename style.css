@@ -1,34 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    text-align: center;
     background-color: #f5f5f5;
     font-family: sans-serif;
     padding: 1rem;
 }
 
-div {
+.color-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.color-box {
     height: 18rem;
     width: 48rem;
     border: none;
     border-radius: 22px;
-    margin: auto;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: #e0e0e0;
+    text-align: center;
     padding: 1rem;
+    color: white;
 }
 
 p {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem;
     background-color: skyblue;
     border-radius: 20px;
     width: 22rem;
-    margin: auto;
     color: white;
+    text-align: center;
+    margin: 0;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     color: skyblue;
 }
 
@@ -39,9 +54,10 @@ button {
     outline: none;
     color: white;
     background-color: skyblue;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
     box-shadow: 3px 3px 12px skyblue;
+    width: 12rem;
 }
 
 button:active {
@@ -51,17 +67,35 @@ button:active {
 .hex-code {
     padding: 1rem;
     width: 10rem;
-    margin: auto;
     text-align: center;
     border-radius: 20px;
     color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     background-color: #e0e0e0;
 }
 
 .fa-clipboard {
     cursor: pointer;
+}
+
+.previous-generated-colors {
+    color: white;
+    border: none;
+    width: auto;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous-generated-colors span {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 12px;
+    border: none;
+}
+
+h3 {
+    color: skyblue;
+    font-size: 1rem;
 }

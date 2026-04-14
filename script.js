@@ -2,7 +2,9 @@
 let btn = document.querySelector("button");
 let colorValue = document.querySelector(".color-value");
 let hexCode = document.querySelector(".hex-code");
-let box = document.querySelector("div");
+let box = document.querySelector(".color-box");
+let history = [];
+let previousColorsBox = document.querySelector(".previous-generated-colors");
 
 
 let currentRgb = "";
@@ -25,6 +27,15 @@ btn.addEventListener("click", function () {
 
 
     box.style.background = currentRgb;
+    history.unshift(currentRgb);
+    history = history.slice(0, 5);
+    previousColorsBox.innerHTML = "";
+    history.forEach(function (e) {
+        let previousColor = document.createElement("span");
+        previousColor.style.backgroundColor = e;
+        previousColorsBox.appendChild(previousColor);
+    })
+
 });
 
 
@@ -66,3 +77,7 @@ document.addEventListener("keydown", function (event) {
         btn.click();
     }
 })
+
+
+
+
