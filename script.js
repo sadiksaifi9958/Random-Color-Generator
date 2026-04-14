@@ -36,6 +36,7 @@ btn.addEventListener("click", function () {
         previousColorsBox.appendChild(previousColor);
     })
 
+    box.textContent = "";
 });
 
 
