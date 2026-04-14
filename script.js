@@ -60,3 +60,9 @@ function getRandomColor() {
 
     return { rgb, hex };
 }
+
+document.addEventListener("keydown", function (event) {
+    if (event.code === "Space") {
+        btn.click();
+    }
+})
