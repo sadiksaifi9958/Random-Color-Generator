@@ -24,7 +24,7 @@ body {
     width: 48rem;
     border: none;
     border-radius: 22px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: #e0e0e0;
     text-align: center;
     padding: 1rem;
@@ -33,11 +33,11 @@ body {
 
 p,
 .hex-code {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1rem;
     background-color: #e0e0e0;
     border-radius: 20px;
-    width: 14rem;
+    width: 15rem;
     height: 3rem;
     color: white;
     text-align: center;
@@ -46,7 +46,7 @@ p,
 
 p i,
 .hex-code i {
-    margin-right: 2rem;
+    margin-left: 0.5rem;
 }
 
 h1 {
@@ -61,10 +61,10 @@ button {
     outline: none;
     color: white;
     background-color: skyblue;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 3px 3px 12px skyblue;
-    width: 14rem;
+    width: 15rem;
 }
 
 button:active {
@@ -94,7 +94,7 @@ button:active {
 
 h3 {
     color: skyblue;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 2rem;
 }
 
