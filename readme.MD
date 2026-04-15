@@ -1,55 +1,61 @@
-# 🎨 Random Color Generator
+# Random Color Generator
 
-A lightweight browser-based tool that generates random colors on button click and displays the result in real time — built with pure HTML, CSS, and JavaScript.
+A clean, interactive color tool built with vanilla HTML, CSS, and JavaScript.
 
-🔗 [Live Demo](https://sadiksaifi9958.github.io/Random-Color-Generator)
+🔗 **Live Demo**: [sadiksaifi9958.github.io/Random-Color-Generator](https://sadiksaifi9958.github.io/Random-Color-Generator/)
+
+---
+
+## Screenshot
+
+![Random Color Generator](app.png)
+
+> Generate random colors instantly — with HEX and RGB values, one-click copy, and a color history.
 
 ---
 
 ## Features
 
-- Click a button to instantly generate a random color
-- Background updates live to reflect the generated color
-- Displays the color value so you can see what was generated
-- Zero dependencies — plain HTML, CSS, and JavaScript
+- **Random Color Generation** — generates a new color on every click
+- **HEX and RGB Values** — shows both color formats simultaneously
+- **Copy to Clipboard** — click the copy icon on HEX or RGB pill to copy the value instantly
+- **Copy Feedback** — icon changes to a checkmark to confirm copy
+- **Color History** — last 5 generated colors shown as clickable swatches
+- **Spacebar Shortcut** — press Space to generate a new color without using the mouse
+- **Color Preview Box** — large display area that fills with the generated color
 
 ---
 
-## Tech Stack
+## Built With
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Page structure |
-| CSS3 | Styling and layout |
-| JavaScript (Vanilla) | Color generation logic and DOM manipulation |
+- HTML5
+- CSS3 (Flexbox, Custom Properties)
+- JavaScript (DOM Manipulation, Clipboard API, Keyboard Events)
 
 ---
 
-## How It Works
+## What I Learned
 
-1. User clicks the **Generate Color** button
-2. JavaScript generates a random hex color using `Math.random()`
-3. The page background (or a color display box) updates to show the new color
-4. The hex/color value is shown on screen
+- Converting RGB values to HEX using `.toString(16)` and `.padStart()`
+- Using the Clipboard API — `navigator.clipboard.writeText()`
+- Keyboard events — `document.addEventListener("keydown")`
+- Dynamic DOM rendering — creating and clearing elements on each interaction
+- Event delegation — listening on parent elements instead of dynamic children
+- `setTimeout` for timed UI feedback
+- Array methods — `unshift()` and `slice()` for managing color history
 
 ---
 
 ## Getting Started
 
-### Run Locally
+To run this project locally:
 
 ```bash
-# Clone the repository
 git clone https://github.com/sadiksaifi9958/Random-Color-Generator.git
-
-# Navigate into the project folder
 cd Random-Color-Generator
-
-# Open index.html in your browser
-open index.html
 ```
 
-No build tools or dependencies required.
+Then open `index.html` in your browser or use Live Server in VS Code.
 
 ---
 
@@ -57,18 +63,11 @@ No build tools or dependencies required.
 
 ```
 Random-Color-Generator/
-├── index.html      # Main HTML file
-├── style.css       # Styles
-└── script.js       # Color generation logic
+├── index.html
+├── style.css
+├── script.js
+└── app.png
 ```
-
----
-
-## What I Learned
-
-- Generating random hex color values using `Math.random()` and string manipulation
-- Updating the DOM dynamically with JavaScript (`style.backgroundColor`, `textContent`)
-- Connecting button click events to JavaScript functions using `addEventListener`
 
 ---
 
@@ -76,7 +75,7 @@ Random-Color-Generator/
 
 **Sadik Saifi**
 - GitHub: [@sadiksaifi9958](https://github.com/sadiksaifi9958)
-- LinkedIn: [linkedin.com/in/sadik-saifi-934794353](https://www.linkedin.com/in/sadik-saifi-934794353?utm_source=share_via&utm_content=profile&utm_medium=member_android)
+- LinkedIn: [sadik-saifi-934794353](https://linkedin.com/in/sadik-saifi-934794353)
 
 ---
 
